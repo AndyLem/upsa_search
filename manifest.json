@@ -1,0 +1,20 @@
+{
+    "name": "EPAM Omnibox search",
+    "description" : "To use, type 'epam [command: u | t]' plus a search term into the Omnibox.",
+    "version": "1.0",
+    "background": {
+      "scripts": [
+        "services/utils.js",
+        "upsa_api/api.js",
+        "base_api/api.js",
+        "telescope_api/api.js",        
+        "services/apiFactory.js",
+        "background.js"]
+    },
+    "omnibox": { "keyword" : "epam" },
+    "permissions": [
+      "tabs", 
+      "https://upsa.epam.com/",
+      "https://telescope.epam.com/"],
+    "manifest_version": 2
+  }
